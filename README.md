@@ -6,6 +6,22 @@ Originally published at http://samuelsjoberg.com/archive/2009/10/autocompletion-
 
 This project is in the public domain.
 
+# How to compile and run example
+
+![Sample application](https://github.com/sasjo/autocomplete/blob/master/screenshot.png)
+
+Pull the repository and compile it:
+
+```bash
+mvn package
+```
+
+To run the example application, double click the jar in the target folder or run:
+
+```bash
+java -jar target/autocomplete-1.0-SNAPSHOT.jar
+```
+
 ------
 
 In a small application I developed not long ago I wanted to use autocompletion directly inside a text field. The completion was used in a multiline JTextArea and therefore I didn't want any drop-down list displaying the suggestions (this is the approach taken by most existing solutions). Instead I wanted the suggestion to appear as a selected text range when a unique suggestion was found.
